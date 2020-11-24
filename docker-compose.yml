@@ -1,0 +1,14 @@
+version: '3'
+services:
+  local_dns:
+    image: andyshinn/dnsmasq
+    container_name: local_dns
+    hostname: docker.dns.local
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    volumes:
+      - $PWD/hosts-dnsmasq:/etc/hosts-dnsmasq
+      - $PWD/dnsmasq.conf:/etc/dnsmasq.conf
+    cap_add:
+      - NET_ADMIN

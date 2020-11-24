@@ -1,0 +1,5 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+
+# ↓にIP群列挙
+192.168.3.3 hogehoge.com
+192.168.3.3 hugahuga.com
